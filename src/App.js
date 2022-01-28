@@ -18,7 +18,7 @@ function readTitle(value){
   
 }
 function getMovieData(){
-  let url=`http://www.omdbapi.com/?t=${movietitle}&apikey=6d780b65`;
+  let url=`https://www.omdbapi.com/?t=${movietitle}&apikey=6d780b65`;
   fetch(url)
   .then((response)=>response.json())
        .then((movie)=>{
